@@ -4,7 +4,9 @@
 public abstract class
 SortCompetition {
 	
-	public abstract int challengeOne(int[] arr);
+	public abstract int challengeOne(int[] arr){
+
+	}
 
 	public abstract int challengeTwo(String[] arr, String query);
 
