@@ -1,7 +1,7 @@
 public class sortAManiaTestRunner {
     public static void main(String[] args){
         SortCompetition team1 = new Team1SortCompetition(); // create an instance of your class
-        int[] randIntArr = SortingUtil.randIntArray(10000); // initialize a random int array
+        int[] randIntArr = randomIntsArr(10000); // initialize a random int array
         String[] randStringArr = randomStringArr(10000,5); //init a random string array
 
         System.out.println("Unsorted");
