@@ -1,4 +1,4 @@
-public class ChallengeOne extends SortCompetition {
+public abstract class ChallengeOne extends SortCompetition {
     public ChallengeOne(int[] Arr) {
         challengeOne(Arr);
     }
