@@ -16,6 +16,17 @@ public abstract class ChallengeTwo extends Team3SortCompetition {
                 }
             }
         }
-        int indexOfString = //unfinished here
+        int indexOfString = -1;
+        int i = 0;
+        while (i < arr.length || !(arr[i].equals(query)))
+        {
+            i++;
+        }
+        if (arr[i].equals(query))
+        {
+            indexOfString = i;
+        }
+        return indexOfString;
     }
+    //i cant tell if this works yet, haven't tested it
 }
