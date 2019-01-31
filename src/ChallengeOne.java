@@ -1,5 +1,6 @@
 public abstract class ChallengeOne extends Team3SortCompetition {
-    public ChallengeOne(int[] Arr) {
+    public ChallengeOne(int[] Arr)
+    {
         challengeOne(Arr);
     }
     @Override
