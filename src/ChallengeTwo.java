@@ -1,4 +1,4 @@
-public abstract class ChallengeTwo extends SortCompetition {
+public abstract class ChallengeTwo extends Team3SortCompetition {
     //Sorts list and determines if it contains a given string
     //returns the index of the first instance o that string or -1 if not found
     public int challengeTwo(String[] arr, String query){
