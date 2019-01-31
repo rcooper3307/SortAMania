@@ -1,8 +1,8 @@
 public abstract class ChallengeTwo extends Team3SortCompetition {
     //Sorts list and determines if it contains a given string
-    //returns the index of the first instance o that string or -1 if not found
     public int challengeTwo(String[] arr, String query){
         //uses bubbleSort to sort strings from 0-10, then alphabetical order
+        //there might be a way to make this faster by using insertion sort
         int swap = 1;
         String temp;
         while (swap > 0){
@@ -16,6 +16,8 @@ public abstract class ChallengeTwo extends Team3SortCompetition {
                 }
             }
         }
+        // checks if string query is in arr
+        // returns the index of the first instance of that string or -1 if not found
         int indexOfString = -1;
         int i = 0;
         while (i < arr.length || !(arr[i].equals(query)))
