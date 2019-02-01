@@ -6,11 +6,6 @@ public abstract class ChallengeOne extends Team3SortCompetition {
     @Override
     public int challengeOne(int[] arr) {
        Sorts.insertionSort(arr);
-       if(arr.length%2 == 1) {
-           return (arr.length + 1)/2;
-       } else {
-           int h = arr.length/2;
-           return (arr[h] + arr[h - 1])/2;
-       }
+       return SortingUtil.FindMed(arr);
     }
 }

@@ -16,4 +16,14 @@ public class Sorts {
             }
         }
     }
+    public static void ArrRowSort(int[][] arr, int r) {
+        int[] temp = new int[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            temp[i] = arr[r][i];
+        }
+        insertionSort(temp);
+        for(int j = 0; j < arr.length; j++) {
+            arr[r][j] = temp[j];
+        }
+    }
 }

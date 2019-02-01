@@ -52,4 +52,21 @@ public class SortingUtil {
         }
         return true;
     }
+    //Finds the median of a 1D array. Assumes the array has already been sorted
+    public static int FindMed(int[] arr) {
+        if(arr.length%2 == 1) {
+            return (arr.length + 1)/2;
+        } else {
+            int h = arr.length/2;
+            return (arr[h] + arr[h - 1])/2;
+        }
+    }
+    //Finds the median of a row in a 2D array. Assumes the row has already been sorted.
+    public static int FindRowMed(int[][] arr, int r) {
+        int[] temp = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            temp[i] = arr[r][i];
+        }
+        return FindMed(temp);
+    }
 }
