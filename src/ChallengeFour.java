@@ -4,6 +4,8 @@ public abstract class ChallengeFour extends Team3SortCompetition {
     }
     @Override
     public int challengeFour(int[][] arr) {
+        int temp = 0;
+        return temp;
 
     }
     public void ArraySort(int[][] arr1) {
