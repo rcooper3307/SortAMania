@@ -31,4 +31,8 @@ public abstract class ChallengeTwo extends Team3SortCompetition {
         return indexOfString;
     }
     //i cant tell if this works yet, haven't tested it
+
+    //self note:
+    //after all challenges are coded, merge all 5 into a new class named Team3SortCompetition
+    //rename current Team3SortCompetition to SortAMania
 }
