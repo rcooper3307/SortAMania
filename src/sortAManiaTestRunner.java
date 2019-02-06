@@ -51,6 +51,7 @@ public class sortAManiaTestRunner
         String[] randStringArr = SortingUtil.randomStringArr(10000,5); //init a random string array
 
 
+
         System.out.println("Unsorted");
         SortingUtil.printArr(randIntArr); //print out the unsorted int array
 
