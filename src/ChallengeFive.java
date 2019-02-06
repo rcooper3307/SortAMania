@@ -13,19 +13,4 @@ public abstract class ChallengeFive implements Comparable<ChallengeFive>{
     {
         return this.value - other.value;
     }
-
-    public ChallengeFive[] randomThingArr(int num)
-    {
-        ChallengeFive[] things = new ChallengeFive[num];
-        for (int i = 0; i < num; i++)
-        {
-            things[i] = new ChallengeFive() {
-                @Override
-                public int compareTo(ChallengeFive other) {
-                    return super.compareTo(other);
-                }
-            };
-        }
-        return things;
-    }
 }

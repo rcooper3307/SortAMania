@@ -55,11 +55,23 @@ public class sortAManiaTestRunner
         System.out.println("Unsorted");
         SortingUtil.printArr(randIntArr); //print out the unsorted int array
 
-        long time = System.currentTimeMillis(); //start the timer
-        int median = team3.challengeOne(randIntArr); //run your challenge one code
-        time = System.currentTimeMillis() - time; // stop the timer
-        System.out.println("Challenge One Time Taken: " + time * 0.001 + " Seconds"); //print the time
-        System.out.println("Median equals: " + median); //print the median you found
+        long time1 = System.currentTimeMillis(); //start the timer
+        int median1 = team3.challengeOne(randIntArr); //run your challenge one code
+        time1 = System.currentTimeMillis() - time1; // stop the timer
+        System.out.println("Challenge One Time Taken: " + time1 * 0.001 + " Seconds"); //print the time
+        System.out.println("Median equals: " + median1); //print the median you found
+
+        System.out.println("Sorted");
+        SortingUtil.printArr(randIntArr); //check if the array was sorted correctly
+
+        System.out.println("Unsorted");
+        SortingUtil.printArr(randIntArr); //print out the unsorted int array
+
+        long time2 = System.currentTimeMillis(); //start the timer
+        int median = team3.challengeTwo(randStringArr,"b"); //run your challenge one code
+        time2 = System.currentTimeMillis() - time2; // stop the timer
+        System.out.println("Challenge One Time Taken: " + time2 * 0.001 + " Seconds"); //print the time
+        System.out.println("Median equals: " + median2); //print the median you found
 
         System.out.println("Sorted");
         SortingUtil.printArr(randIntArr); //check if the array was sorted correctly
