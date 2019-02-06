@@ -69,6 +69,7 @@ public class SortingUtil {
         }
         return FindMed(temp);
     }
+
     public ChallengeFive[] randomThingArr(int num)
     {
         ChallengeFive[] things = new ChallengeFive[num];

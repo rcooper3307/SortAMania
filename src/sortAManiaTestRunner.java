@@ -68,7 +68,7 @@ public class sortAManiaTestRunner
         SortingUtil.printArr(randIntArr); //print out the unsorted int array
 
         long time2 = System.currentTimeMillis(); //start the timer
-        int median = team3.challengeTwo(randStringArr,"b"); //run your challenge one code
+        int median2 = team3.challengeTwo(randStringArr,"b"); //run your challenge one code
         time2 = System.currentTimeMillis() - time2; // stop the timer
         System.out.println("Challenge One Time Taken: " + time2 * 0.001 + " Seconds"); //print the time
         System.out.println("Median equals: " + median2); //print the median you found
