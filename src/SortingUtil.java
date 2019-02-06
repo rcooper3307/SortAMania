@@ -41,6 +41,14 @@ public class SortingUtil {
         }
         System.out.println();
     }
+    public static void printArr(String[] arr)
+    {
+        for (String num:arr)
+        {
+            System.out.print(num+" ");
+        }
+        System.out.println();
+    }
     public static boolean isSorted(int[]arr)
     {
         for(int i = 0; i < (arr.length-1); i++)
@@ -69,8 +77,7 @@ public class SortingUtil {
         }
         return FindMed(temp);
     }
-
-    public ChallengeFive[] randomThingArr(int num)
+    public static  ChallengeFive[] randomThingArr(int num)
     {
         ChallengeFive[] things = new ChallengeFive[num];
         for (int i = 0; i < num; i++)

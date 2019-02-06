@@ -49,6 +49,7 @@ public class sortAManiaTestRunner
         }; // create an instance of your class
         int[] randIntArr = SortingUtil.randomIntArr(10000); // initialize a random int array
         String[] randStringArr = SortingUtil.randomStringArr(10000,5); //init a random string array
+        ChallengeFive[] randThingArr = SortingUtil.randomThingArr(10000);
 
 
 
@@ -64,17 +65,23 @@ public class sortAManiaTestRunner
         System.out.println("Sorted");
         SortingUtil.printArr(randIntArr); //check if the array was sorted correctly
 
+
+
+        //testing challenge2
+
+
+
         System.out.println("Unsorted");
-        SortingUtil.printArr(randIntArr); //print out the unsorted int array
+        SortingUtil.printArr(randStringArr); //print out the unsorted int array
 
         long time2 = System.currentTimeMillis(); //start the timer
-        int median2 = team3.challengeTwo(randStringArr,"b"); //run your challenge one code
+        int strIndex = team3.challengeTwo(randStringArr,"b"); //run your challenge two code
         time2 = System.currentTimeMillis() - time2; // stop the timer
-        System.out.println("Challenge One Time Taken: " + time2 * 0.001 + " Seconds"); //print the time
-        System.out.println("Median equals: " + median2); //print the median you found
+        System.out.println("Challenge Two Time Taken: " + time2 * 0.001 + " Seconds"); //print the time
+        System.out.println("Index equals: " + strIndex); //print the index you found
 
         System.out.println("Sorted");
-        SortingUtil.printArr(randIntArr); //check if the array was sorted correctly
+        SortingUtil.printArr(randStringArr); //check if the array was sorted correctly
 
     }
 }
