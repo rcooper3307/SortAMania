@@ -31,15 +31,13 @@ public class sortAManiaTestRunner
                 // checks if string query is in arr
                 // returns the index of the first instance of that string or -1 if not found
                 int indexOfString = -1;
-                int i = 0;
-                while (i < arr.length || !(arr[i].equals(query)))
-                {
-                    i++;
+                for (int i = 0; i < arr.length; i++){
+                    if (arr[i].equals(query)){
+                        indexOfString = i;
+                        break;
+                    }
                 }
-                if (arr[i].equals(query))
-                {
-                    indexOfString = i;
-                }
+
                 return indexOfString;
             }
 
@@ -67,6 +65,7 @@ public class sortAManiaTestRunner
                 return 0;
             }
 
+            //a custom greeting for the sorter to introduce itself
             @Override
             public String greeting() {
                 return null;
