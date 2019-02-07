@@ -9,8 +9,11 @@ public abstract class ChallengeFour extends Team3SortCompetition {
             Sorts.ArrRowSort(arr,i);
             meds[i] = SortingUtil.FindRowMed(arr,i);
         }
-
-        return 0; //delete this line if you're working on the challenge4,
+        Sorts.insertionSort(meds);
+        for(int j = 0; j < arr[0].length; j++) {
+            
+        }
+        return SortingUtil.FindMed(meds); //delete this line if you're working on the challenge4,
         // i put it here just to make the runner work
     }
 }

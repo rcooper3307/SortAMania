@@ -6,6 +6,15 @@ public class SortingUtil {
         arr[x] = arr[y];
         arr[y] = temp;
     }
+    //swaps two rows of a two dimensional array
+    public static void rowSwap(int[][]arr, int x, int y) {
+        int[] temp = new int[arr.length];
+        for(int i = 0; i < arr.length; i++) {
+            temp[i] = arr[x][i];
+            arr[x][i] = arr[y][i];
+            arr[y][i] = temp[i];
+        }
+    }
     public static int[] randomIntArr(int count)
     {
         int arr[] = new int[count];
