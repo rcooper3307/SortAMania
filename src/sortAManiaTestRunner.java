@@ -15,7 +15,32 @@ public class sortAManiaTestRunner
 
             @Override
             public int challengeTwo(String[] arr, String query) {
-                return 0;
+                int swap = 1;
+                String temp;
+                while (swap > 0){
+                    swap = 0;
+                    for (int i = 1; i < arr.length; i++){
+                        if ((arr[i-1].compareTo(arr[i])) > 0){
+                            temp = arr[i];
+                            arr[i] = arr[i-1];
+                            arr[i-1] = temp;
+                            swap++;
+                        }
+                    }
+                }
+                // checks if string query is in arr
+                // returns the index of the first instance of that string or -1 if not found
+                int indexOfString = -1;
+                int i = 0;
+                while (i < arr.length || !(arr[i].equals(query)))
+                {
+                    i++;
+                }
+                if (arr[i].equals(query))
+                {
+                    indexOfString = i;
+                }
+                return indexOfString;
             }
 
             @Override
