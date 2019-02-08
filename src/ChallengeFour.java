@@ -10,10 +10,17 @@ public abstract class ChallengeFour extends Team3SortCompetition {
             meds[i] = SortingUtil.FindRowMed(arr,i);
         }
         Sorts.insertionSort(meds);
-        for(int j = 0; j < arr[0].length; j++) {
-            
+        MedSort(meds, arr);
+        return SortingUtil.FindMed(meds);
+    }
+    //Sorts arr based on the values in med. assumes that med is already sorted
+    public void MedSort(int[] med, int[][] arr) {
+        for(int i = 0; i < med.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                if(SortingUtil.FindRowMed(arr,j) == med[i]) {
+                    SortingUtil.rowSwap(arr, i, j);
+                }
+            }
         }
-        return SortingUtil.FindMed(meds); //delete this line if you're working on the challenge4,
-        // i put it here just to make the runner work
     }
 }
