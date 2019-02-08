@@ -115,17 +115,13 @@ public class SortingUtil {
         }
         return FindMed(temp);
     }
-    public static ChallengeFive[] randomThingArr(int num)
+    public static Thing[] randomThingArr(int num)
     {
-        ChallengeFive[] things = new ChallengeFive[num];
+        Thing[] things = new Thing[num];
         for (int i = 0; i < num; i++)
         {
-            things[i] = new ChallengeFive() {
-                @Override
-                public int compareTo(ChallengeFive other) {
-                    return super.compareTo(other);
-                }
-            };
+            things[i] = new Thing();
+
         }
         return things;
     }

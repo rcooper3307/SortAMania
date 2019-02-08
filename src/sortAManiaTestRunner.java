@@ -64,21 +64,30 @@ public class sortAManiaTestRunner
                     meds[i] = SortingUtil.FindRowMed(arr,i);
                 }
                 Sorts.insertionSort(meds);
-                for(int j = 0; j < arr[0].length; j++) {
-
+                MedSort(meds, arr);
+                return SortingUtil.FindMed(meds);
+            }
+            //Sorts arr based on the values in med. assumes that med is already sorted
+            public void MedSort(int[] med, int[][] arr) {
+                for(int i = 0; i < med.length; i++) {
+                    for (int j = 0; j < arr[0].length; j++) {
+                        if(SortingUtil.FindRowMed(arr,j) == med[i]) {
+                            SortingUtil.rowSwap(arr, i, j);
+                        }
+                    }
                 }
-                return SortingUtil.FindMed(meds); //delete this line if you're working on the challenge4,
-                // i put it here just to make the runner work
+            }
+            @Override
+            public int challengeFive(Comparable[] arr, Comparable query)
+            {
+               return 0;
             }
 
-            @Override
-            public int challengeFive(Comparable[] arr, Comparable query) {
-                return 0;
-            }
 
             //a custom greeting for the sorter to introduce itself
             @Override
-            public String greeting() {
+            public String greeting()
+            {
                 return null;
             }
         }; // create an instance of your class
@@ -86,7 +95,7 @@ public class sortAManiaTestRunner
         int[] randIntArr2 = SortingUtil.randomIntArr(100000);
         int[][] randBigArr = SortingUtil.randomBigArr(1000,1000); // initialize a random Big array
         String[] randStringArr = SortingUtil.randomStringArr(10000,5); //init a random string array
-        ChallengeFive[] randThingArr = SortingUtil.randomThingArr(10000);
+        //ChallengeFive[] randThingArr = SortingUtil.randomThingArr(10000);
 
 
 
@@ -151,17 +160,17 @@ public class sortAManiaTestRunner
 
         //method 5
 
-        System.out.println("Unsorted Challenge Five");
-        SortingUtil.printArr(randThingArr); //print out the unsorted int array
+        //System.out.println("Unsorted Challenge Five");
+        //SortingUtil.printArr(randThingArr); //print out the unsorted int array
 
-        long time5 = System.currentTimeMillis(); //start the timer
-        int thingIndex = team3.challengeFive(randThingArr,"g"); //run your challenge one code
-        time5 = System.currentTimeMillis() - time5; // stop the timer
-        System.out.println("Challenge Five Time Taken: " + time5 * 0.001 + " Seconds"); //print the time
-        System.out.println("Index equals: " + thingIndex); //print the median you found
+        //long time5 = System.currentTimeMillis(); //start the timer
+       // int thingIndex = team3.challengeFive(randThingArr,"g"); //run your challenge one code
+       // time5 = System.currentTimeMillis() - time5; // stop the timer
+       // System.out.println("Challenge Five Time Taken: " + time5 * 0.001 + " Seconds"); //print the time
+        //System.out.println("Index equals: " + thingIndex); //print the median you found
 
-        System.out.println("Sorted Challenge Five ");
-        SortingUtil.printArr(randThingArr); //check if the array was sorted correctly
+       // System.out.println("Sorted Challenge Five ");
+        //SortingUtil.printArr(randThingArr); //check if the array was sorted correctly
 
 
 
