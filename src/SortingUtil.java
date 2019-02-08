@@ -79,14 +79,14 @@ public class SortingUtil {
             }
             System.out.println();
     }
-    public static void printArr(ChallengeFive[] arr)
-    {
-        for (ChallengeFive num:arr)
-        {
-            System.out.print(num+" ");
-        }
-        System.out.println();
-    }
+    //public static void printArr(ChallengeFive[] arr)
+    //{
+        //for (ChallengeFive num:arr)
+        //{
+           // System.out.print(num+" ");
+        //}
+       // System.out.println();
+    //}
     public static boolean isSorted(int[]arr)
     {
         for(int i = 0; i < (arr.length-1); i++)
